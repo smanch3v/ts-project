@@ -1,5 +1,7 @@
+import classes from './TodoItem.module.css'
+
 const TodoItem: React.FC<{text:string}> = (props) => {
-    return <li>
+    return <li className={classes.item}>
         {props.text}
     </li>
 }
